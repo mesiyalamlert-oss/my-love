@@ -1,0 +1,72 @@
+<html lang="th"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO PANYA</title>
+  <style>
+    body {
+      font-family: "Prompt", sans-serif;
+      background: #fdf6ff;
+      text-align: center;
+      padding: 40px;
+      color: #444;
+    }
+    h1 {
+      color: #d477ff;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    .button {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 24px;
+      background: #ffc9f0;
+      border-radius: 18px;
+      cursor: pointer;
+      transition: 0.25s;
+      font-size: 1.1rem;
+    }
+    .button:hover {
+      background: #ffb0e6;
+    }
+    .card {
+      margin: 20px auto;
+      padding: 20px;
+      width: 260px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      display: none;
+      font-size: 1.1rem;
+    }
+    img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ Happy New Year 2026 ✨</h1>
+  <h1>💖 คุณ PANYA 💖</h1><p>ปีนี้มีอะไรมากมายให้หวนคิดถึงเลยเนอะ เป็นปีที่ดีอีกปีเพราะเราได้อยู่ด้วยกัน ได้ไปเที่ยวด้วยกัน ได้กินของอร่อยๆ</p>
+
+  <div class="button" onclick="showCard('wish1')">🌈</div>
+  <div class="button" onclick="showCard('wish2')">🧸</div>
+  <div class="button" onclick="showCard('pic1')">🌟</div>
+
+  <div id="wish1" class="card" style="display: none;">ขอให้เธอพบเจอแต่คนดีๆ สุขภาพแข็งแรงและใช้ชีวิตอย่างมีความสุขนะคะ 🌸 ปีข้างหน้านี้คงต้องลุยงานแล้วสินะ เค้าอยู่ตรงนี้เสมอ เธอผ่านไปได้อยู่แล้ว เก่งมากๆ </div>
+  <div id="wish2" class="card" style="display: none;">ขอบคุณนะคะ เดินทางมาจะเข้าปีที่ 4 แล้ว บางทีก็รู้สึกว่ามันผ่านไปไวจัง บางทีก็รู้สึกเวลาเดินช้าจัง(ตอนที่เธอกำลังจะกลับมา ฮ่าๆๆๆ) แต่เค้ารอเธอนะ ไม่ต้องห่วงอะไรเลย ไม่ต้องกดดันตัวเอง เราจะโตไปพร้อมๆกัน เติบโต และถูกหวยไปพร้อมๆกัน 🌈✨</div>
+
+  <div id="pic1" class="card" style="display: block;">
+    <img src="My Love.jpg" alt="My Love" style="width: 100%; border-radius: 14px;">
+    รักเธอนะ ตี๋ตี๋ 🐾💗
+  </div>
+
+  <script>
+    function showCard(id) {
+      document.querySelectorAll('.card').forEach(c => c.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+
+</body></html>
